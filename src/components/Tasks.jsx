@@ -9,8 +9,8 @@ import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 const lightTheme = createTheme({ palette: { mode: 'light' } });
 
 function Tasks(props){
-    const {task, DeleteTask, EditTask} = props
-    console.log(task)
+    const {task, DeleteTask, EditTask, index} = props
+    
     const [status, setStatus] = React.useState(task.status);
 
     const handleChange = (event) => {
@@ -23,7 +23,7 @@ function Tasks(props){
       EditTask(task.id, formData)
     };
     return(
-        <div  className="task" style={{ display:'flex', justifyContent: task.id%2? 'end': 'start', textAlign: 'left', color: 'black',}}>
+        <div  className="task" style={{ display:'flex', justifyContent: index%2? 'end': 'start', textAlign: 'left', color: 'black',}}>
          <ThemeProvider theme={lightTheme}>
              <div style={{backgroundColor: 'yellow',width: "85%", marginTop: 10,  padding:'0px 10px 0px 10px'}}>
           <h4 style={{textAlign:'center'}}>{task.title}</h4>

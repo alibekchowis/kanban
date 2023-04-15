@@ -32,14 +32,14 @@
       "attachment": "[object Object]",
       "title": "sdfsdf",
       "description": "hasdjkfhasjk sfhskdjfas kjhfksjdf",
-      "status": "todo",
+      "status": "done",
       "id": 8
     },
     {
-      "attachment": {},
+      "attachment": "[object Object]",
       "title": "qwerty",
       "description": "asdfasdf safdsadf asdfasdf",
-      "status": "todo",
+      "status": "inProgress",
       "id": 9
     }
   ]
